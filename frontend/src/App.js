@@ -1,10 +1,16 @@
 import React from 'react';
-import Topbar from './components/topbar/Topbar';
+import "./app.css"
+import { Topbar, Sidebar } from 'components';
+import Home from './pages/home/Home';
 
 function App() {
   return (
     <div>
       <Topbar />
+      <div className="container">
+        <Sidebar />
+        <Home/>
+      </div>
     </div>
   );
 }
