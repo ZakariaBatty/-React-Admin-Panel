@@ -9,7 +9,10 @@ import {
   Timeline,
   TrendingUp,
   Report,
-  Storefront
+  Storefront,
+  WorkOutline,
+  AttachMoney,
+  BarChart
 } from '@material-ui/icons';
 
 function Sidebar() {
@@ -47,11 +50,11 @@ function Sidebar() {
               Products
             </li>
             <li className="sidebarListItem">
-              <TrendingUp className="sidebarIcon" />
+              <AttachMoney className="sidebarIcon" />
               Transactions
             </li>
             <li className="sidebarListItem">
-              <TrendingUp className="sidebarIcon" />
+              <BarChart className="sidebarIcon" />
               Reports
             </li>
           </ul>
@@ -79,6 +82,7 @@ function Sidebar() {
           <h3 className="sidebarTitle">staff</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem active">
+            <WorkOutline className="sidebarIcon" />
               Manage
             </li>
             <li className="sidebarListItem">
