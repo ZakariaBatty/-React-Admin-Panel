@@ -12,8 +12,9 @@ import {
   Storefront,
   WorkOutline,
   AttachMoney,
-  BarChart
+  BarChart,
 } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 
 function Sidebar() {
   return (
@@ -21,12 +22,16 @@ function Sidebar() {
       <div className="sidebarWrapper">
         {/* part 1  dashboard*/}
         <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Dashboard</h3>
+          <Link to="/" className="link">
+            <h3 className="sidebarTitle">Dashboard</h3>
+          </Link>
           <ul className="sidebarList">
-            <li className="sidebarListItem active">
-              <LineStyle className="sidebarIcon" />
-              Home
-            </li>
+            <Link to="/" className="link">
+              <li className="sidebarListItem active">
+                <LineStyle className="sidebarIcon" />
+                Home
+              </li>
+            </Link>
             <li className="sidebarListItem">
               <Timeline className="sidebarIcon" />
               Analytics
@@ -41,14 +46,18 @@ function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem active">
-              <PermIdentity className="sidebarIcon" />
-              Users
-            </li>
-            <li className="sidebarListItem">
-              <Storefront className="sidebarIcon" />
-              Products
-            </li>
+            <Link to="/users" className="link">
+              <li className="sidebarListItem ">
+                <PermIdentity className="sidebarIcon" />
+                Users
+              </li>
+            </Link>
+            <Link to="/products" className="link">
+              <li className="sidebarListItem">
+                <Storefront className="sidebarIcon" />
+                Products
+              </li>
+            </Link>
             <li className="sidebarListItem">
               <AttachMoney className="sidebarIcon" />
               Transactions
@@ -63,7 +72,7 @@ function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Notifications</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem active">
+            <li className="sidebarListItem ">
               <MailOutline className="sidebarIcon" />
               Mail
             </li>
@@ -79,10 +88,10 @@ function Sidebar() {
         </div>
         {/* part 4 staff*/}
         <div className="sidebarMenu">
-          <h3 className="sidebarTitle">staff</h3>
+          <h3 className="sidebarTitle">Staff</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem active">
-            <WorkOutline className="sidebarIcon" />
+            <li className="sidebarListItem ">
+              <WorkOutline className="sidebarIcon" />
               Manage
             </li>
             <li className="sidebarListItem">
