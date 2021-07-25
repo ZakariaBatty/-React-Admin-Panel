@@ -49,7 +49,23 @@ export const userData = [
   },
 ];
 
-//@ DATA USERS
+//@productdata
+export const productData = [
+  {
+    name: 'Jan',
+    'Sales': 3490,
+  },
+  {
+    name: 'Fab',
+    'Sales': 3490,
+  },
+  {
+    name: 'Mar',
+    'Sales': 8490,
+  },
+];
+
+//@ ROW USERS
 export const userRows = [
   {
     id: 1,
@@ -140,5 +156,99 @@ export const userRows = [
     email: 'JonSown@gmail.com',
     status: 'active',
     transaction: '$120.00',
+  },
+];
+
+//@ PRODACUT ROWS
+export const productRows = [
+  {
+    id: 1,
+    name: 'Apple Airpods',
+    img:
+      'https://cdn.pixabay.com/photo/2021/07/02/03/19/panpipe-6380762_960_720.jpg',
+    stock: 123,
+    status: 'active',
+    price: '$120.00',
+  },
+  {
+    id: 2,
+    name: 'Apple Airpods',
+    img:
+      'https://cdn.pixabay.com/photo/2021/07/02/03/19/panpipe-6380762_960_720.jpg',
+    stock: 123,
+    status: 'active',
+    price: '$120.00',
+  },
+  {
+    id: 3,
+    name: 'Apple Airpods',
+    img:
+      'https://cdn.pixabay.com/photo/2021/07/02/03/19/panpipe-6380762_960_720.jpg',
+    stock: 123,
+    status: 'active',
+    price: '$120.00',
+  },
+  {
+    id: 4,
+    name: 'Apple Airpods',
+    img:
+      'https://cdn.pixabay.com/photo/2021/07/02/03/19/panpipe-6380762_960_720.jpg',
+    stock: 123,
+    status: 'active',
+    price: '$120.00',
+  },
+  {
+    id: 5,
+    name: 'Apple Airpods',
+    img:
+      'https://cdn.pixabay.com/photo/2021/07/02/03/19/panpipe-6380762_960_720.jpg',
+    stock: 123,
+    status: 'active',
+    price: '$120.00',
+  },
+  {
+    id: 6,
+    name: 'Apple Airpods',
+    img:
+      'https://cdn.pixabay.com/photo/2021/07/02/03/19/panpipe-6380762_960_720.jpg',
+    stock: 123,
+    status: 'active',
+    price: '$120.00',
+  },
+  {
+    id: 7,
+    name: 'Apple Airpods',
+    img:
+      'https://cdn.pixabay.com/photo/2021/07/02/03/19/panpipe-6380762_960_720.jpg',
+    stock: 123,
+    status: 'active',
+    price: '$120.00',
+  },
+  {
+    id: 8,
+    name: 'Apple Airpods',
+    img:
+      'https://cdn.pixabay.com/photo/2021/07/02/03/19/panpipe-6380762_960_720.jpg',
+    stock: 123,
+    status: 'active',
+    price: '$120.00',
+  },
+  {
+    id: 9,
+    name: 'Apple Airpods',
+    img:
+      'https://cdn.pixabay.com/photo/2021/07/02/03/19/panpipe-6380762_960_720.jpg',
+    stock: 123,
+    status: 'active',
+    price: '$120.00',
+  },
+  {
+    id: 10,
+    name: 'Apple Airpods',
+    img:
+      'https://cdn.pixabay.com/photo/2021/07/02/03/19/panpipe-6380762_960_720.jpg',
+    stock: 123,
+    status: 'active',
+    price: '$120.00',
   },
 ];

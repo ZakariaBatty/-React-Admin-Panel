@@ -8,6 +8,8 @@ import NewUser from 'pages/newUser/NewUser';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import ProductList from 'pages/productList/ProductList';
+import Product from 'pages/product/Product';
+import NewProduct from 'pages/newProduct/NewProduct';
 
 
 function App() {
@@ -22,9 +24,8 @@ function App() {
           <Route path="/user/:userId" component={user} />
           <Route path="/newUser" component={NewUser} />
           <Route path="/products" component={ProductList} />
-          <Route path="/product/:productId" component={ProductList} />
-          <Route path="/newproduct" component={ProductList} />
-
+          <Route path="/product/:productId" component={Product} />
+          <Route path="/newproduct" component={NewProduct} />
         </Switch>
       </div>
     </BrowserRouter>
