@@ -68,7 +68,9 @@ const NewUser = () => {
             <option value="no">No</option>
           </select>
         </div>
-        <button className="newUserButton">Create</button>
+        <div className="newUserItem">
+          <button className="newUserButton">Create</button>
+        </div>
       </from>
     </div>
   );
