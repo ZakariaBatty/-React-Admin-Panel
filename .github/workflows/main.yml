@@ -28,3 +28,4 @@ jobs:
           server: ftp.deployreact.ga
           username: dash
           password: ${{ secrets.ftp_passowrd }}
+          local-dir: build/
