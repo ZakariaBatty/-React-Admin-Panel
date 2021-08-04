@@ -18,14 +18,14 @@ function App() {
       <Topbar />
       <div className="container">
         <Sidebar />
-        <Switch>
+       <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/users" component={UserList} />
           <Route path="/user/:userId" component={user} />
           <Route path="/newUser" component={NewUser} />
           <Route path="/products" component={ProductList} />
           <Route path="/product/:productId" component={Product} />
-          <Route path="/newproduct" component={NewProduct} />
+          <Route path=" /newproduct" component={NewProduct} />
         </Switch>
       </div>
     </BrowserRouter>

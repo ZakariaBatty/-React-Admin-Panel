@@ -65,6 +65,7 @@ const WidgetLg = () => {
             <Button type="Pending" />
           </td>
         </tr>
+        
         {/* Approved */}
         <tr className="widgetLgTr">
           <td className="widgetLgUser">
