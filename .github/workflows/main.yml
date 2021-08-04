@@ -1,7 +1,8 @@
-on: 
-  push :
-    branches: 
-      - main
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -14,7 +15,7 @@ jobs:
       - name: Use Node.js 12
         uses: actions/setup-node@v2-beta
         with:
-          node-version: '12'
+          node-version: [12.x, 14.x, 16.x]
 
       - name: 🔨 Build Project
         run: |
@@ -24,6 +25,6 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
-          server: ${{ secrets.server }}
-          username: ${{ secrets.username }}
-          password: ${{ secrets.passowrd }}
+          server: ftp.deployreact.ga
+          username: dash
+          password: ${{ secrets.ftp_passowrd }}
